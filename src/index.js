@@ -1,17 +1,10 @@
-console.log("build success");
+import loadContent from './home.js';
 
+const menuBtn = document.querySelector('.menu');
 const content = document.getElementById('content');
 
-const loadContent = () => {
-    const img = document.createElement('img');
-    img.src = '../ramen.jpg';
-    img.alt = 'ramen';
+menuBtn.addEventListener('click', () => {
+    content.textContent = '';
+    loadContent();
+})
 
-    const div = document.createElement('div');
-    div.textContent = 'Brand New Ramen Flavors!!!';
-
-    content.appendChild(img);
-    content.appendChild(div);
-};
-
-loadContent();
