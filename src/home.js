@@ -1,9 +1,11 @@
+import Ramen from '../assets/ramen.jpg'
+
 const content = document.getElementById('content');
 
 const loadContent = () => {
     content.innerHTML = '';
     const img = document.createElement('img');
-    img.src = '../ramen.jpg';
+    img.src = Ramen;
     img.alt = 'ramen';
 
     const div = document.createElement('div');
