@@ -36,5 +36,3 @@ module.exports = {
   },
   mode: 'development',
 };
-
-//left off at step 7 on odin

@@ -1,18 +1,10 @@
-import Ramen from '../assets/ramen.jpg'
 
-const content = document.getElementById('content');
+
+const content = document.querySelector('.content');
+const home = document.querySelector('.home');
 
 const loadContent = () => {
-    content.innerHTML = '';
-    const img = document.createElement('img');
-    img.src = Ramen;
-    img.alt = 'ramen';
-
-    const div = document.createElement('div');
-    div.textContent = 'Brand New Ramen Flavors!!!';
-
-    content.appendChild(img);
-    content.appendChild(div);
-};
+    home.classList.add('active');
+}
 
 export default loadContent;

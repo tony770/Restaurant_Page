@@ -1,11 +1,22 @@
-import loadContent from './home.js';
-import "./style.css";
+import home from './home.js';
+import './style.css';
 
-const menuBtn = document.querySelector('.menu');
-const content = document.getElementById('content');
+const homeBtn = document.querySelector('.home');
+const content = document.querySelector('.content');
+const buttons = document.querySelectorAll('.navbar button');
 
-menuBtn.addEventListener('click', () => {
-    content.textContent = '';
-    loadContent();
+
+document.addEventListener('DOMContentLoaded', () => {
+    home();
 })
 
+buttons.forEach(button => {
+    button.addEventListener('click', function() {
+        buttons.forEach(btn => {
+            if(btn !== button) {
+                btn.classList.remove('active');
+            }
+            button.classList.add('active');
+        })
+    })
+})
