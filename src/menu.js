@@ -1,15 +1,17 @@
 const content = document.querySelector('.content');
-const home = document.querySelector('.home');
+const menu = document.querySelector('.menu');
 
 const loadContent = () => {
-    home.classList.add('active');
+    menu.classList.add('active');
     content.textContent = '';
 
     const classes = content.className.split(' ');
     if(classes.length === 2)
         content.classList.remove(classes[1]);
 
-    content.classList.add('homeCss')
+    content.classList.add('menuCss');
+
+    
 }
 
 export default loadContent;

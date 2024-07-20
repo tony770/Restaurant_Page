@@ -40,15 +40,6 @@ button.active {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-/*content styling to be replaced with each module, hard coding atm */
-.homeCss {
-    height: 100vh;
-    background: url(../assets/background.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
 .menuCss {
     height: 100vh;
     background: url(../assets/menuBackground.jpg);
