@@ -1,3 +1,4 @@
+
 const content = document.querySelector('.content');
 const home = document.querySelector('.home');
 

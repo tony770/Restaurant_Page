@@ -46,4 +46,92 @@ button.active {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.menuContainer {
+    display: flex;
+    gap: 20px;
+}
+
+.divider {
+    width: 20vw;
+    height: 75vh;
+    padding: 10px;
+}
+
+.itemContainer {
+    width: 20vw;
+    height: 100%;
+    padding-top: 10px;
+    overflow: auto;
+    background-color: rgb(202, 193, 193);
+}
+
+.itemContainer::-webkit-scrollbar {
+    display: none;
+}
+
+img {
+    width: 200px;
+}
+
+.itemCell {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    background-color: white;
+    height: 30%;
+    align-items: center;
+    margin: 0 5px 30px 5px;
+
+}
+
+.mondstadt {
+    background-image: url(../assets/itemBackgrounds/Background_Mondstadt_Blessing.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.liyue {
+    background-image: url(../assets/itemBackgrounds/Background_Liyue_A_Thousand_Ships.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.itemTitle {
+    grid-column: 1/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 20px;
+    color: white;
+}
+
+.mondTitle {
+    background-color: rgb(87, 197, 161);
+}
+
+.liyueTitle {
+    background-color: rgb(218, 194, 74);
+}
+
+.itemImg {
+    grid-column: 1/2;
+    margin-right: 2px;
+}
+
+.itemDescription {
+    display: flex;
+    grid-column: 2/3;
+    font-size: 18px;
+    align-self: start;
+    padding-top: 15px;
+}
+
+
