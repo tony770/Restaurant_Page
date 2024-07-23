@@ -1,6 +1,15 @@
+@font-face {
+    font-family: 'RobotoCondensed';
+    src: url(../assets/fonts/RobotoCondensed-Italic-VariableFont_wght.ttf) format('ttf'),
+            url(../assets/fonts/RobotoCondensed-VariableFont_wght.ttf) format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     margin: 0;
     padding: 0;
+    font-family: 'RobotoCondensed', sans-serif;
 }
 
 .navbar {
@@ -55,4 +64,136 @@ button.active {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuContainer {
+    display: flex;
+    gap: 30px;
+}
+
+.divider {
+    width: 20vw;
+    height: 75vh;
+    padding: 10px;
+    text-align: center;
+}
+
+.divider > h2 {
+    background-color: rgb(242, 185, 117);
+    height: 40px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+
+.itemContainer {
+    width: 20vw;
+    height: 100%;
+    padding-top: 10px;
+    overflow: auto;
+    background-color: rgba(238, 226, 226, 0.5);
+    border-radius: 10px;
+}
+
+.itemContainer::-webkit-scrollbar {
+    display: none;
+}
+
+img {
+    width: 200px;
+}
+
+.itemCell {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    background-color: white;
+    height: 35%;
+    align-items: center;
+    margin: 0 5px 30px 5px;
+    border-radius: 10px;
+}
+
+.mondstadt {
+    background-image: url(../assets/itemBackgrounds/Background_Mondstadt_Blessing.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.liyue {
+    background-image: url(../assets/itemBackgrounds/Background_Liyue_A_Thousand_Ships.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.inazuma {
+    background-image: url(../assets/itemBackgrounds/Background_Inazuma_Raiden_Emblem.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sumeru {
+    background-image: url(../assets/itemBackgrounds/Background_Sumeru_Observance.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.fontaine {
+    background-image: url(../assets/itemBackgrounds/Background_Fontaine_Wondrous_Machine.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.itemTitle {
+    grid-column: 1/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.mondTitle {
+    background-color: rgb(87, 197, 161);
+}
+
+.liyueTitle {
+    background-color: rgb(218, 194, 74);
+}
+
+.fontTitle {
+    background-color: rgb(74, 93, 218);
+}
+
+.inaTitle {
+    background-color: rgb(187, 74, 218);
+}
+
+.sumeTitle {
+    background-color: rgb(39, 208, 24);
+}
+
+.itemImg {
+    grid-column: 1/2;
+}
+
+.itemDescription {
+    display: flex;
+    grid-column: 2/3;
+    font-size: 17px;
+    align-self: center;
+    text-align: left;
+    padding-top: 15px;
+    font-weight: 600;
+    font-style: italic;
 }
